@@ -1,0 +1,19 @@
+version: '3.7'
+
+networks:
+  gateway-network:
+    name: gateway-network
+    external: true
+
+services:
+  flexi-eureka:
+    #image: flexi-eureka:${BUILD_VERSION}
+    container_name: flexi-eureka
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    networks:
+      - gateway-network
+    restart: always

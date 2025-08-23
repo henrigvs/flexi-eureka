@@ -10,7 +10,7 @@
     </parent>
     <groupId>be.aidji</groupId>
     <artifactId>flexi-eureka</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>flexi-eureka</name>
     <description>flexi-eureka</description>
 

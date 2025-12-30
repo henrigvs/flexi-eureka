@@ -81,6 +81,12 @@
                 </configuration>
             </plugin>
 
+            <!-- Spring Boot Maven Plugin - Required to create executable JAR -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
             <!-- Versioning plugin-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>

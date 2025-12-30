@@ -15,6 +15,7 @@
     <name>flexi-eureka</name>
     <description>flexi-eureka</description>
 
+
     <properties>
         <!-- Java 25 -->
         <java.version>25</java.version>

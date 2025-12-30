@@ -7,5 +7,13 @@ server:
 
 eureka:
     client:
-        register-with-eureka: ${REGISTER_WITH_EUREKA:false}
-        fetch-registry: ${FETCH_REGISTRY:false}
+        register-with-eureka: false
+        fetch-registry: false
+        service-url:
+            defaultZone: http://eureka:${EUREKA-PORT:8761}/eureka/
+    instance:
+        hostname: eureka
+        prefer-ip-address: false
+        non-secure-port: 8761
+    server:
+        enable-self-preservation: false

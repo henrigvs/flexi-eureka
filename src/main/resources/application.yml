@@ -2,6 +2,15 @@ spring:
     application:
         name: flexi-eureka
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+  endpoint:
+    health:
+      show-details: never
+
 server:
     port: ${EUREKA-PORT:8761}
 
